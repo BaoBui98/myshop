@@ -1,0 +1,426 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.back-to-top {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    position: fixed;
+    bottom: 13px;
+    right: 23px;
+    text-align: center;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid white;
+}
+.header{
+    height: 60px;
+    background-color: rgba(38, 80, 119, 0.7);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.header .header-name{
+    line-height: 60px;
+    color: aqua;
+    padding: 0 24px;
+    
+}
+.header .header-contact >ul{
+    display: flex;
+    line-height: 60px;
+    list-style: none;
+    
+}
+.header .header-contact > ul > li {
+    padding: 0 24px;
+    color: white;
+} 
+.header .header-contact > ul > li:hover{
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+.content{
+    background-image: url('../img/mau-thiet-ke-shop-thoi-trang-nam-crystaldesigntpl.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 50%;
+    width: 100%;
+    margin-top: 60px;
+}
+.content .content-descr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 12px;
+}
+.content .content-descr > p{
+    padding: 12px 0;
+}
+.sub-content{
+    max-width: 1200px;
+    margin: auto;
+}
+.four-col{
+    padding: 15px 0;
+}
+.four-col > .row{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -10px;
+}
+.four-col > .row > .col{
+    padding: 0 10px;
+}
+.four-col > .row > .col > p {
+   
+    cursor: pointer;
+}
+.four-col > .row > .col span {
+    margin: 2px 0;
+    display: inline-block;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.four-col > .row > .col > p:hover{
+    color: red;
+}
+.sub-content .content-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+.sub-content .content-list > h3{
+    margin-bottom: 40px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+.sub-content .content-list > p{
+    opacity: 0.7;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.content-list .icon-content{
+    position: relative;
+    width: 25px;
+    margin: auto;
+}
+
+.content-list > .icon-content > .icon{
+    width: 27px;
+    height: 27px;
+    background-image: url(https://bizweb.dktcdn.net/100/384/760/themes/761815/assets/interface.svg?1634261159038);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: 7px;
+    z-index: 1;
+    background-color: white;
+}
+.linebeak{
+    height: 1px;
+    width: 170px;
+    background-color: #ccc;
+    position: absolute;
+    bottom: 22px;
+    right: -74px;
+
+}
+.three-col{
+    margin: 35px 0;
+}
+.three-col > .row {
+    display: flex;
+    margin: 0 -12px;
+}
+.three-col > .row > .col{
+    width: calc(100% / 3);
+    padding: 0 12px;
+}
+.col .row-two .col-two img,
+.three-col > .row > .col > img {
+    width: 100%;
+    object-fit: cover;
+    height: 400px;
+    transition: all 0.4s ease-in-out;
+}
+.aonam {
+    margin-top: -34px;
+}
+.col .row-two .col-two {
+    padding: 17px 0;
+}
+.col .row-two .col-two img {
+    
+    height: 200px;
+  
+  
+}
+.three-col > .row > .col > img:hover{
+    
+    height: 450px;
+    cursor: pointer;
+   
+}
+.row-two .col-two img:hover{
+    height: 210px;
+    width: calc(100% + 30px);
+    cursor: pointer;
+}
+.list-items {
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+.list-items > ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.list-items > ul > li {
+    padding: 2px 15px;
+    color: black;
+    cursor: pointer;
+    border: solid 1px transparent;
+    position: relative;
+}
+.list-items > ul > li > .overlay{
+    height: 1px;
+    width: 16px;
+    background-color: black;
+    position: absolute;
+    transform: translateX(50%);
+    right: 50%;
+    margin-top: 1px;
+    
+}
+.list-items > ul > li:hover{
+    background-color: white;
+    border: 1px solid black;
+}
+.four-col__container{
+    margin: 28px 0;
+}
+.four-col > .row > .col{
+    width: calc(100% / 4);
+   
+}
+.four-col > .row > .col > .img-change img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.change-ao1,
+.change-ao2,
+.change-ao3,
+.change-ao4{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+
+}
+.img-change{
+    position: relative;
+    
+
+}
+.img-change:hover .change-ao1,
+.img-change:hover .change-ao2,
+.img-change:hover .change-ao3,
+.img-change:hover .change-ao4{
+    display: block;
+    cursor: pointer;
+}
+.prices-des{
+    margin-top: 33px;
+}
+.prices-des .price .before-prices,
+.prices-des .price .after-prices{
+    display: inline-block;
+}
+.prices-des .price .before-prices{
+    color: red;
+}
+.prices-des .price .after-prices{
+    margin-left: 7px;
+    opacity: 0.7;
+    text-decoration: line-through;
+
+}
+.prices-des .des-cloth p{
+    padding-top: 2px;
+}
+.prices-des .des-cloth p:hover{
+    color: orange;
+    cursor: pointer;
+}
+.news .two-col .row{
+    display: flex;
+    margin: 0 -10px;
+}
+.news .two-col .row .col{
+    width: calc(100% / 2);
+    padding: 0 10px
+}
+.news .two-col .row .col img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: all 0.4s ease-in-out;
+    margin: 27px 0;
+}
+.news .two-col .row .col img:hover{
+    margin-top: 27px;
+    height: 350px;
+    cursor: pointer;
+}
+.col .news-header{
+    padding: 10px 0;
+}
+.col .news-header h3{
+    margin-bottom: 10px;
+}
+.col .news-header p{
+    margin-bottom: 20px;
+}
+.two-col .row .col a{
+    text-decoration: none;
+    padding: 0 25px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    height: 40px;
+    line-height: 38px;
+    border: 1px solid #222;
+   font-size: 13px;
+}
+.two-col .row .col a:hover{
+    background-color: white;
+    color: black;
+}
+.fav-brands{
+    padding-top: 40px;
+}
+.five-cols .row{
+    display: flex;
+    margin: 0 -16px;
+}
+.five-cols .row .col {
+    width: 20%;
+    padding: 0 16px;
+}
+.five-cols .row .col img {
+    width: 100%;
+    height: 180px;
+    margin-top: 37px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.update-news{
+    margin-top: 20px;
+}
+.new-col .row{
+    display: flex;
+   
+}
+.new-col .row .col {
+    width: calc(100% / 2);
+   
+
+}
+.new-col .row .col .desc-new{
+    display: flex;
+}
+.img-news{
+    width: 50%;
+} 
+.new-col .row .col .desc-new img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin: 15px 0;
+    padding: 0 5px;
+}
+.desc-new .links-news{
+    width: 50%;
+    padding: 0 5px;
+}
+.desc-new .links-news a {
+    text-decoration: none;
+    color: black;
+}
+.desc-new .links-news p {
+    margin: 10px 0;
+    opacity: 0.7;
+}
+.desc-new .links-news a:hover{
+    color: red;
+}
+.hot-new{
+    margin-top: 10px;
+}
+.footer{
+    margin-top: 50px;
+}
+.footer-container{
+    padding: 40px 0;
+}
+.footer .footer-end{
+    min-height: 60px;
+    width: 100%;
+    background-color: black;
+}
+.footer-container .sub-content .four-col .row {
+    margin: 0 -10px;
+}
+.footer-container .sub-content .four-col .row .col {
+    padding: 0 10px;
+}
+.footer-container .sub-content .four-col .row .col ul {
+    list-style: none;
+}
+.footer-container .sub-content .four-col .row .col h2 {
+    margin-bottom: 20px;
+    text-align: center;    
+}
+.footer-container .sub-content .four-col .row .col h4 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.footer-container .sub-content .four-col .row .col ul li {
+    margin-top: 8px;
+    cursor: pointer;
+}
+.footer-container .sub-content .four-col .row .col ul li:hover{
+    color: red;
+}
+.col .container-contact{
+    display: flex;
+    margin-bottom: 8px;
+}
+.col .container-contact .title{
+    width: 30%;
+    font-weight: bold;
+}
+.col .container-contact .contact-footer{
+    width: 70%;
+}
+.col .container-contact .sub-contact:hover{
+    cursor: pointer;
+    color: red;
+}
+
+
